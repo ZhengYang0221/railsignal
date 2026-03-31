@@ -1,0 +1,26 @@
+# API
+fastapi==0.115.0
+uvicorn==0.30.0
+pydantic==2.8.0
+httpx==0.27.0
+
+# Data & Reddit
+requests==2.32.3
+pandas==2.2.2
+numpy==1.26.4
+
+# Database
+psycopg2-binary==2.9.9
+pgvector==0.3.2
+
+# AI / ML
+openai==2.30.0
+scikit-learn==1.5.1
+vaderSentiment==3.3.2
+
+# Dashboard
+streamlit==1.37.0
+plotly==5.23.0
+
+# Utilities
+python-dotenv==1.0.1
