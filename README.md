@@ -2,8 +2,7 @@
 
 **Multilingual Gaming Intelligence & Yield Platform**
 
-<!-- Replace <your-username> with your GitHub username before pushing -->
-[![CI](https://github.com/<your-username>/railsignal/actions/workflows/test.yml/badge.svg)](https://github.com/<your-username>/railsignal/actions/workflows/test.yml)
+[![CI](https://github.com/ZhengYang0221/railsignal/actions/workflows/test.yml/badge.svg)](https://github.com/ZhengYang0221/railsignal/actions/workflows/test.yml)
 
 Ingests English Reddit posts from r/HonkaiStarRail and surfaces bilingual (EN/ZH)
 actionable insights for game live-ops stakeholders via a Streamlit dashboard.
