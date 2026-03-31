@@ -6,7 +6,6 @@ Called by ingestor.py (training + inference) and api.py (inference only).
 """
 
 import logging
-import os
 import pickle
 from pathlib import Path
 from typing import Optional

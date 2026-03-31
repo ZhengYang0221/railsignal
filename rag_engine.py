@@ -10,7 +10,6 @@ import os
 import re
 import time
 from datetime import datetime, timedelta, timezone
-from typing import Optional
 
 import openai
 from dotenv import load_dotenv

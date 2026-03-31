@@ -6,7 +6,7 @@ All services import from here; no raw psycopg2 elsewhere.
 import logging
 import os
 from contextlib import contextmanager
-from typing import Any, Generator
+from typing import Generator
 
 import psycopg2
 import psycopg2.extras

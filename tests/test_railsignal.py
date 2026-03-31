@@ -8,12 +8,7 @@ External dependencies (Reddit, OpenAI, PostgreSQL) are fully mocked
 so these tests run without any credentials or running services.
 """
 
-import importlib
-import json
-import sys
-import types
-from unittest.mock import MagicMock, patch, call
-import numpy as np
+from unittest.mock import MagicMock, patch
 import pytest
 
 

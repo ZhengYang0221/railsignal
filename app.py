@@ -10,8 +10,6 @@ No direct DB or ML imports.
 
 import os
 import time
-from datetime import date, timedelta
-from typing import Optional
 
 import httpx
 import plotly.graph_objects as go
@@ -575,8 +573,8 @@ with tab_versions:
                             st.warning(
                                 "One or both periods have 0 posts. This means the ingestor "
                                 "was not running during that patch window, so no posts from "
-                                f"that period are in the database. "
-                                f"Posts are matched by creation date — only dates when the "
+                                "that period are in the database. "
+                                "Posts are matched by creation date — only dates when the "
                                 "ingestor was actively scraping will have data."
                             )
                         else:

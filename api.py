@@ -6,7 +6,6 @@ Start with:
 """
 
 import logging
-import os
 import threading
 import uuid
 from datetime import date, datetime, timedelta
@@ -19,7 +18,7 @@ from pydantic import BaseModel
 import db
 from brain import semantic_search
 from ingestor import run_ingestion
-from ml_engine import classify_post, load_models, score_engagement
+from ml_engine import load_models
 from patch_schedule import get_patch_schedule, versions_for_range
 from rag_engine import run_rag_query
 

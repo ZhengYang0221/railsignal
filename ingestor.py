@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 import db
-from brain import get_embedding, batch_embed
+from brain import batch_embed
 from ml_engine import classify_post, load_models
 from patch_schedule import get_patch_schedule
 

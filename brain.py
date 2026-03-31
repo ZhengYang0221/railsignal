@@ -8,7 +8,6 @@ because OpenAI's embedding space is multilingual.
 import logging
 import os
 import time
-from typing import Optional
 
 import openai
 from dotenv import load_dotenv
