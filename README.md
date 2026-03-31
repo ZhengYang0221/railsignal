@@ -9,11 +9,51 @@ actionable insights for game live-ops stakeholders via a Streamlit dashboard.
 
 ---
 
-## Screenshots
+## Walkthrough Screenshots
 
-> _Add screenshots here after running the dashboard._
->
-> Suggested: Community Health tab, The Bridge search result, Version Compare chart, Ask the Analyst answer.
+
+><img width="1789" height="799" alt="image" src="https://github.com/user-attachments/assets/0c876cfe-de46-4e6c-b9a9-2ddd6ff7da86" />
+> <img width="1833" height="722" alt="image" src="https://github.com/user-attachments/assets/3dcb3de5-2058-4f74-8655-1b45008faba6" />
+The Community Health tab surfaces real-time KPIs pulled from r/HonkaiStarRail. Below the metrics, an AI Weekly Digest powered by GPT-5.4 synthesises the week's top community signals
+into a side-by-side bilingual brief — English on the left for global stakeholders, Mandarin on the right for the devs — with referenced source posts linked below.
+<br>
+<br>
+
+The lower half shows a dual-axis chart overlaying daily sentiment (line) against post volume (bars), an ML-classified post type breakdown (TF-IDF + Logistic Regression),
+and a Top Post per Complaint Category panel with direct Reddit links for raw community signal.
+<br>
+<br>
+
+> <img width="1842" height="786" alt="image" src="https://github.com/user-attachments/assets/c9f503a2-6c5e-4d35-b9ef-c94ac52d87f3" />
+The Bridge implements semantic search over the full Reddit corpus.
+The search triggers an OpenAI embedding query against pgvector, retrieves the relevant posts, and pipes them through a
+RAG chain to generate a dual-language executive summary.
+Both languages' summaries are produced in a single call, ensuring consistency. Detected sentiment
+defects such as Bug Report are automatically tagged below, and source posts used to ground the answer are accessible at the bottom.
+
+<br>
+<br>
+
+> <img width="1834" height="837" alt="image" src="https://github.com/user-attachments/assets/51fdcc85-4e0a-44f0-b561-d510ced89661" />
+<img width="1813" height="375" alt="image" src="https://github.com/user-attachments/assets/2b301197-6c4d-47bb-9205-d82c49fbb18f" />
+
+The Version Compare tab allows live-ops teams to benchmark community health across
+patch cycles. Comparing versions reveals
+meaningful data such as average sentiment, defect rate, and post volume across different patches.
+The delta indicators and grouped bar charts make the version
+health story scannable at a glance, without requiring stakeholders to query raw data. The bottom part includes an AI analysis of the comparison too.
+
+<br>
+<br>
+
+> <img width="1828" height="893" alt="image" src="https://github.com/user-attachments/assets/6627e7c2-cd06-48ee-8e3e-e833e5b82711" />
+A stakeholder-facing RAG chatbot grounded entirely in scraped Reddit data, every claim traceable to a source post. Suggested question chips lower the barrier for non-technical users.
+Returns structured bilingual answers citing specific upvote counts (6,065 ↑, 4,657 ↑, 2,455 ↑), with flagged issues and direct Reddit source links for full auditability.
+
+
+
+
+
 
 ---
 
